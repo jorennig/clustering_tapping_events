@@ -1,0 +1,41 @@
+feature_files:
+    TEST-DOMINANT: format.csv
+    TEST-NONDOMINANT: format.csv
+
+tests:
+    - TEST-DOMINANT
+    - TEST-NONDOMINANT
+
+features: ['A', 'B']
+features_clustering: ['n_clusters', 'temporal_difference_clusters']
+features_summary: ['percent_n_clusters>1', 'percent_temporal_difference_clusters']
+
+p_threshold: 0.05
+p_threshold_plot: 0.001
+threshold_strokes: 10
+threshold_distance: 30
+
+min_proportion: 0.2
+min_samples: 5
+
+ppi: 294
+mm_per_inch: 25.4
+
+pixels_x: 720
+pixels_y: 1480
+
+width: 7
+height: 15
+
+device_data_path: 'test-runs'
+destination_folder_plots: 'results/plots'
+
+demographics: 'demographics.csv'
+clinical: 'clinical.csv'
+
+clinical_features: ['a', 'b', 'c', 'd']
+
+group_cols: ['subject_id', 'device_id', 'test', 'test_repeat', 'test_run_begin', 'day_of_study', 'test_run_type']
+
+circle_coordinates: 'circle_coordinates.csv'
+icon_coordinates: 'upper_circle_coordinates.csv'
